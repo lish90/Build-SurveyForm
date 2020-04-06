@@ -6,20 +6,55 @@
     <title>Build a Survey Form</title>
 </head>
 <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title"> Planner Addict Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us to the planner Addict needs</p>
     <form action="" id="survey-form">
-        <label for=""></label>
-        <input type="text" type="name">
-        <label for=""></label>
-        <input type="email" required>
-        <label for=""></label>
-        <input type="number" required>
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder="Sarh McLean">
+        
+        <label for="">Email</label>
+        <input type="email"  placeholder="sarah.mclean3@yahoo.com" required>
+        
+        <label for="">Age</label>
+        <input type="text"  type="number" min="11" max="98" placeholder="30" required>
 
-        <label for=""></label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="">
+        <label for="planners"> Choose a your current planner:</label>
+        <select name="planners" id="planners">
+            <option value="Erin Condren">Erin Condren - lifePlanner</option>
+            <option value="Erin Condren - teacher Planner">Erin Condren - teacher Planner</option>
+            <option value="Erin Condren - acdemic Planner">Erin Condren - acdemic Planner</option>
+            <option value="Passion Planner">Passion Planner</option>
+            <option value="Hobonichi A5"> Hobonichi A5</option>
+            <option value="other planner">other planner</option>
+        </select>
+        <div id="radio- ">
+        <h2> How many Planner do you have</h2>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">One</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">Two</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">three</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">four</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">Five</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">Six</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">Seven</label>
+        <input type="radio" name="low-range" id="low-range" value="1">
+        <label for="">Eight +</label>
+        </div>
+        <div class="checkbox-fave" >
+         <h2>what you your Favitourt planner ?</h2>
+          <input type="checkbox" name="" id="" value=""> 
+          <label for="">EC</label> 
+        </div>
 
+        <label for="">Addition information about planner Addict and explain your favouite features </label>
+        <textarea name="Addition" id="" cols="30" rows="10"></textarea>
+        <button  type="submit" class="submit-button"> submit</button>
     </form>
     
 </body>
