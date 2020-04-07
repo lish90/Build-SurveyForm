@@ -8,7 +8,7 @@
 <body>
     <h1 id="title"> Planner Addict Survey Form</h1>
     <p id="description"> Thank you for taking the time to help us to the planner Addict needs</p>
-    <form action="" id="survey-form">
+    <form action="" target="_blank" id="survey-form" method="POST">
         <label for="">Name</label>
         <input type="text" name="name" placeholder="Sarh McLean">
         
@@ -18,14 +18,15 @@
         <label for="">Age</label>
         <input type="text"  type="number" min="11" max="98" placeholder="30" required>
 
-        <label for="planners"> Choose a your current planner:</label>
+        <label for="planners"> What were your reason for getting your first planner ?</label>
         <select name="planners" id="planners">
-            <option value="Erin Condren">Erin Condren - lifePlanner</option>
-            <option value="Erin Condren - teacher Planner">Erin Condren - teacher Planner</option>
-            <option value="Erin Condren - acdemic Planner">Erin Condren - acdemic Planner</option>
-            <option value="Passion Planner">Passion Planner</option>
-            <option value="Hobonichi A5"> Hobonichi A5</option>
-            <option value="other planner">other planner</option>
+            <option value="personal">Personal</option>
+            <option value="Teacher Planner"> Teacher Planner</option>
+            <option value=" Acdemic Planner"> Acdemic Planner</option>
+            <option value="Passion Project">Passion Project</option>
+            <option value="Budget"> Budget</option>
+            <option value="Jounraling">Jounraling</option>
+            <option value="other" aria-placeholder="other explame add here">other</option>
         </select>
         <div id="radio- ">
         <h2> How many Planner do you have</h2>
@@ -50,12 +51,18 @@
          <h2>what you your Favitourt planner ?</h2>
           <input type="checkbox" name="" id="" value=""> 
           <label for="">EC</label> 
+
+          <!-- <option value="Erin Condren">Erin Condren - lifePlanner</option>
+            <option value="Erin Condren - teacher Planner">Erin Condren - teacher Planner</option>
+            <option value="Erin Condren - acdemic Planner">Erin Condren - acdemic Planner</option>
+            <option value="Passion Planner">Passion Planner</option>
+            <option value="Hobonichi A5"> Hobonichi A5</option>
+            <option value="other planner">other planner</option> -->
         </div>
 
         <label for="">Addition information about planner Addict and explain your favouite features </label>
         <textarea name="Addition" id="" cols="30" rows="10"></textarea>
         <button  type="submit" class="submit-button"> submit</button>
-    </form>
-    
+    </form> 
 </body>
 </html>
