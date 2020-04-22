@@ -12,82 +12,111 @@
 <body>
     <h1 id="title"> Planner Addict Survey Form</h1>
     <p id="description"> Thank you for taking the time to help us to the planner Addict needs</p>
-    <form action="" target="_blank" id="survey-form" method="POST">
-        <div class="user-form.information">
-            <label for="">Name</label>
-            <input type="text" name="name" placeholder="Sarh McLean">
-            <label for="">Email</label>
-            <input type="email" placeholder="sarah.mclean3@yahoo.com" required>
-            <label for="">Age</label>
-            <input type="text" type="number" min="11" max="98" placeholder="30" required>
-        </div>
-        <div class="dropdown-selection">
-            <h2> What were your reason for getting your first planner ?</h2>
-            <select name="planners" id="planners">
-                <option value="personal">Personal</option>
-                <option value="Teacher Planner"> Teacher Planner</option>
-                <option value=" Acdemic Planner"> Acdemic Planner</option>
-                <option value="Passion Project">Passion Project</option>
-                <option value="Budget"> Budget</option>
-                <option value="Jounraling">Jounraling</option>
-                <option value="other" aria-placeholder="other explame add here">other</option>
-            </select>
-        </div>
-        <div id="radio- ">
-            <h2> Currently how many planners do you own ? </h2>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">One</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">Two</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">three</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">four</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">Five</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">Six</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">Seven</label>
-            <input type="radio" name="low-range" id="low-range" value="1">
-            <label for="">Eight +</label>
-        </div>
-        <div class="checkbox-fave">
-            <h2>what you your Favitourt planner ?</h2>
-            <input type="checkbox" name="Planner1" class="checkbox-planner" value="EC-lifePlanner">
-            <label for="Erin Condren">Erin Condren - lifePlanner</label>
-            <input type="checkbox" name="Planner2" class="checkbox-planner" value="EC-teacher Planner">
-            <label for="Erin Condren">Erin Condren - teacher Planner</label>
-            <input type="checkbox" name="Planner3" class="checkbox-planner" value="EC-acdemic Planner">
-            <label for="Erin Condren">Erin Condren - acdemic Planner</label>
-            <input type="checkbox" name="Planner4" class="checkbox-planner" value="Passion Planner">
-            <label for="Passion Planner">Passion Planner</label>
-            <input type="checkbox" name="Planner5" class="checkbox-planner" value="PP-acdemic Planner ">
-            <label for="Passion Planner">Passion Planner - acdemic Planner </label>
-            <input type="checkbox" name="Planner6" class="checkbox-planner" value="PP-undated">
-            <label for="Passion Planner">Passion Planner - undated</label>
-            <input type="checkbox" name="Planner7" class="checkbox-planner" value="PP-daily">
-            <label for="Passion Planner">Passion Planner - daily</label>
-            <input type="checkbox" name="Planner8" class="checkbox-planner" value="hobon-english">
-            <label for="hobon-english">Hobonichi - english planner</label>
-            <input type="checkbox" name="Planner9" class="checkbox-planner" value="hobon-original">
-            <label for="hobon-original">Hobonichi -original</label>
-            <input type="checkbox" name="Planner" class="checkbox-planner" value="Hobonichi-originalAvec">
-            <label for="Hobonichi-originalAvec">Hobonichi -original Avec</label>
-            <input type="checkbox" name="Planner10" class="checkbox-planner" value="Hobonichi -dayFree">
-            <label for="Hobonichi -dayFree">Hobonichi - dayFree</label>
-            <input type="checkbox" name="Planner11" class="checkbox-planner" value="Bullet-Jouraling">
-            <label for="Bullet-Jouraling">Bullet - Jouraling</label>
-            <input type="checkbox" name="Planner12" class="checkbox-planner" value="Other">
-            <label for="Other">Other</label>
-        </div>
-        <div class="text-input">
-            <label for="">Addition information about planner Addict and explain your favouite features </label>
-            <textarea name="Addition" id="comment.input" </textarea>
-        </div>
-        <div class="submit-button">
-          <button type="submit">submit</button> 
-        </div>
-    </form> 
+    <div class="container">
+        <form action="" target="_blank" id="survey-form" method="POST">
+            <div class="form-sections">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="input-data" placeholder="Sarh McLean">
+            </div>
+            <div class="form-sections">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="input-data" placeholder="sarah.mclean3@yahoo.com"
+                    required>
+            </div>
+            <div class="form-sections">
+                <label id="number-label" for="">Age</label>
+                <input type="text" id="number" class="input-data" type="number" min="11" max="98" placeholder="30"
+                    required>
+            </div>
+            <div class="form-sections">
+                <h2> What were your reason for getting your first planner ?</h2>
+                <select name="planners" id="dropdown">
+                    <option value="personal">Personal</option>
+                    <option value="Teacher Planner"> Teacher Planner</option>
+                    <option value=" Acdemic Planner"> Acdemic Planner</option>
+                    <option value="Passion Project">Passion Project</option>
+                    <option value="Budget"> Budget</option>
+                    <option value="Jounraling">Jounraling</option>
+                    <option value="other" aria-placeholder="other explame add here">other</option>
+                </select>
+            </div>
+            <div class="form-sections">
+
+                <h2> Currently how many planners do you own ? </h2>
+                <input type="radio" name="low-range" id="radio-inputs" value="One">One
+                <input type="radio" name="low-range" id="radio-inputs" value="Two">Two
+                <input type="radio" name="low-range" id="radio-inputs" value="three">three
+                <input type="radio" name="low-range" id="radio-inputs" value="four">four
+                <input type="radio" name="low-range" id="radio-inputs" value="Five">Five
+                <input type="radio" name="low-range" id="radio-inputs" value="Six">Six
+                <input type="radio" name="low-range" id="radio-inputs" value="Seven">Seven
+                <input type="radio" name="low-range" id="radio-inputs" value="Eight +">Eight +
+
+            </div>
+            <div class="form-sections">
+                <h2>what you your Favitourt planner ?</h2>
+                <label>
+                    <input type="checkbox" name="Planner1" class="checkbox-planner" value="EC-lifePlanner">
+                    Erin Condren - lifePlanner
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner2" class="checkbox-planner" value="EC-teacher Planner">
+                    EC-teacher Planner
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner3" class="checkbox-planner" value="EC-acdemic Planner">
+                    Erin Condren - acdemic Planner
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner4" class="checkbox-planner" value="Passion Planner">
+                    Passion Planner
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner5" class="checkbox-planner" value="PP-acdemic Planner ">
+                    Passion Planner - acdemic Planner
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner6" class="checkbox-planner" value="PP-undated">
+                    Passion Planner - undated
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner7" class="checkbox-planner" value="PP-daily">
+                    Passion Planner - daily
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner8" class="checkbox-planner" value="hobon-english">
+                    Hobonichi - english planner
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner9" class="checkbox-planner" value="hobon-original">
+                    Hobonichi -original
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner" class="checkbox-planner" value="Hobonichi-originalAvec">
+                    Hobonichi -original Avec
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner10" class="checkbox-planner" value="Hobonichi -dayFree">
+                    Hobonichi - dayFree
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner11" class="checkbox-planner" value="Bullet-Jouraling">
+                    Bullet - Jouraling
+                </label>
+                <label>
+                    <input type="checkbox" name="Planner12" class="checkbox-planner" value="Other">
+                    Other
+                </label>
+            </div>
+            <div class="form-sections">
+                <p>Addition information about planner Addict and explain your favouite features </p>
+                <textarea name="Addition" class="text-input" id="comment"></textarea>
+            </div>
+            <div class="form-sections">
+                <button type="submit" id="submit">submit</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
