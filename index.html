@@ -10,8 +10,8 @@
 
 <body>
     <header>
-    <h1 id="title"> Planner Addict Survey Form</h1>
-    <p id="description"> Thank you for taking the time to help us to the planner Addict needs</p>
+        <h1 id="title"> Planner Addict Survey Form</h1>
+        <p id="description"> Thank you for taking the time to helping us to the planner Addict needs</p>
     </header>
     <div class="container">
         <form action="" target="_blank" id="survey-form" method="POST">
@@ -30,7 +30,7 @@
                     required>
             </div>
             <div class="form-sections">
-                <h2> What were your reason for getting your first planner ?</h2>
+                <p id="subheading"> What were your reason for getting your first planner ?</p>
                 <select name="planners" id="dropdown">
                     <option value="personal">Personal</option>
                     <option value="Teacher Planner"> Teacher Planner</option>
@@ -43,19 +43,36 @@
             </div>
             <div class="form-sections">
 
-                <h2> Currently how many planners do you own ? </h2>
-                <input type="radio" name="low-range" id="radio-inputs" value="One">One
-                <input type="radio" name="low-range" id="radio-inputs" value="Two">Two
-                <input type="radio" name="low-range" id="radio-inputs" value="three">three
-                <input type="radio" name="low-range" id="radio-inputs" value="four">four
-                <input type="radio" name="low-range" id="radio-inputs" value="Five">Five
-                <input type="radio" name="low-range" id="radio-inputs" value="Six">Six
-                <input type="radio" name="low-range" id="radio-inputs" value="Seven">Seven
-                <input type="radio" name="low-range" id="radio-inputs" value="Eight +">Eight +
+                <p id="subheading"> Currently how many planners do you own ? </p>
+                <label>
+                    <input type="radio" id="radio-inputs" value='One'>
+                    one
+                </label>
+                <label>
+                    <input type="radio" name="low-range" id="radio-inputs" value="Two">Two
+                </label>
+                <label><input type="radio" name="low-range" id="radio-inputs" value="three">three
+                </label>
+                <label>
+                    <input type="radio" name="low-range" id="radio-inputs" value="four">four
+                </label>
+                <label>
+                    <input type="radio" name="low-range" id="radio-inputs" value="Five">Five
+                </label>
+                <label>
+                    <input type="radio" name="low-range" id="radio-inputs" value="Six">Six
+
+                </label>
+                <label>
+                    <input type="radio" name="low-range" id="radio-inputs" value="Seven">Seven
+                </label>
+                <label><input type="radio" name="low-range" id="radio-inputs" value="Eight +">Eight +
+                </label>
+
 
             </div>
             <div class="form-sections">
-                <h2>what you your Favitourt planner ?</h2>
+                <p id="subheading">what you your Favitourt planner ?</p>
                 <label>
                     <input type="checkbox" name="Planner1" class="checkbox-planner" value="EC-lifePlanner">
                     Erin Condren - lifePlanner
@@ -110,7 +127,7 @@
                 </label>
             </div>
             <div class="form-sections">
-                <p>Addition information about planner Addict and explain your favouite features </p>
+                <p id="subheading">Addition information about planner Addict and explain your favouite features </p>
                 <textarea name="Addition" class="text-input" id="comment"></textarea>
             </div>
             <div class="form-sections">
